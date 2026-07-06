@@ -42,7 +42,7 @@ public class GameWindow extends JFrame {
         header.setBackground(PANEL_BG);
         header.setBorder(new EmptyBorder(12, 18, 12, 18));
 
-        JLabel title = new JLabel("🧩 Maze Solver");
+        JLabel title = new JLabel("Maze Solver");
         title.setFont(new Font("Segoe UI", Font.BOLD, 20));
         title.setForeground(ACCENT);
         header.add(title, BorderLayout.WEST);
@@ -57,7 +57,7 @@ public class GameWindow extends JFrame {
         mazePanel = new MazePanel(new MazePanel.StatusCallback() {
             @Override public void onStatus(String msg) { statusLabel.setText(msg); }
             @Override public void onWin() {
-                statusLabel.setText("🎉 You reached the exit! Press 'New Maze' to play again.");
+                statusLabel.setText("You reached the exit! Press 'New Maze' to play again.");
             }
         });
         mazePanel.setBackground(BG);
@@ -87,7 +87,7 @@ public class GameWindow extends JFrame {
         styleCombo(algoCombo);
 
         // Buttons
-        JButton newBtn   = styledButton("🔀 New Maze", ACCENT);
+        JButton newBtn   = styledButton("New Maze", ACCENT);
         JButton solveBtn = styledButton("▶ Auto-Solve", new Color(100, 160, 255));
         JButton clearBtn = styledButton("✕ Clear", new Color(180, 80, 80));
 
