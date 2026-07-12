@@ -78,7 +78,7 @@ public class MazePanel extends JPanel {
         revalidate();
         repaint();
         requestFocusInWindow();
-        statusCallback.onStatus("Use arrow keys to navigate. Reach the 🔴 red cell to win!");
+        statusCallback.onStatus("Use arrow keys to navigate. Reach the red cell to win!");
     }
 
     public void startSolve(MazeSolver.Algorithm algo) {
@@ -220,7 +220,7 @@ public class MazePanel extends JPanel {
             g2.fillRect(0, 0, getWidth(), getHeight());
             g2.setColor(START_COLOR);
             g2.setFont(new Font("Segoe UI", Font.BOLD, 36));
-            String msg = "🎉 YOU WIN!";
+            String msg = "YOU WIN!";
             FontMetrics fm = g2.getFontMetrics();
             int mx = (getWidth() - fm.stringWidth(msg)) / 2;
             int my = getHeight() / 2;

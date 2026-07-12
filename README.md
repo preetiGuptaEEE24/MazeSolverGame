@@ -2,6 +2,11 @@
 
 A fully playable maze game with animated BFS/DFS solver visualization.
 
+## 🎮 Demo
+
+<p align="center">
+  <img src="assets/MazeSolver.gif" alt="Maze Solver Demo" width="800"/>
+</p>
 ## How to Run
 
 **On Windows:**
